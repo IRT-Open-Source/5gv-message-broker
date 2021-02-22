@@ -1,0 +1,8 @@
+version: '0.0.1'
+services:
+  message_streamer:
+    container_name: message_streamer
+    build: .
+    ports:
+      - '4222:4222'
+      - '8222:8222'
