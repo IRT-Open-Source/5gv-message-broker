@@ -8,7 +8,7 @@ Messaging service for communication between microservices.
 
 ## What is this?
 
-Messaging service as part of the of the [platform](https://gitlab.irt.de/5g-victori/platform) for media caching on trains. Allows communication between microservices. A service can send messages on specific topics, which other services can register to receive updates on (publish/subscribe). The message broker supports message replay, which means that a client which registers for a specific topic will instantly receive the last message sent on this topic. Service of the caching platform benefit from this feature when recovering from an error state. They do not miss messages which may be crucial for resuming operation.
+Messaging service as part of the of the [platform](../../../5gv-platform) for media caching on trains. Allows communication between microservices. A service can send messages on specific topics, which other services can register to receive updates on (publish/subscribe). The message broker supports message replay, which means that a client which registers for a specific topic will instantly receive the last message sent on this topic. Service of the caching platform benefit from this feature when recovering from an error state. They do not miss messages which may be crucial for resuming operation.
 
 ## How does it work?
 
@@ -16,7 +16,7 @@ Message broker is an instance of [NATS streaming service](https://docs.nats.io/d
 
 ## Install, build, run
 
-**Note:** _Typically you would use the `up.sh` script from the [Platform](https://gitlab.irt.de/5g-victori/platform) project to install, build and run this service as part of a composite of docker services. Read on if you intend to run the service directly on your host system._
+**Note:** _Typically you would use the `up.sh` script from the [Platform](../../../5gv-platform) project to install, build and run this service as part of a composite of docker services. Read on if you intend to run the service directly on your host system._
 
 **Prerequesits**:
 
